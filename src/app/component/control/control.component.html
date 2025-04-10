@@ -1,0 +1,27 @@
+<p>control works!</p>
+
+<h2>Exercicio 1 - Mês</h2>
+
+<label for="selector"> Selecione um Mês : </label>
+<select id="selector" (change)="trocarMes($event)">
+<option value="um">Um</option>
+<option value="dois">Dois</option>
+<option value="tres">Tres</option>
+<option value="quatro">Quatro</option>
+<option value="cinco">Cinco</option>
+<option value="seis">Seis</option>
+<option value="sete">Sete</option>
+
+
+</select>
+
+
+<div [ngSwitch]="mesSelecionado">
+  <p *ngSwitchCase="'um'"> Você selecionou "Janeiro"</p>
+  <p *ngSwitchCase="'dois'"> Você selecionou "Fevereiro"</p>
+  <p *ngSwitchCase="'tres'"> Você selecionou "Março"</p>
+  <p *ngSwitchCase="'quatro'"> Você selecionou "Abril"</p>
+  <p *ngSwitchCase="'cinco'"> Você selecionou "Maio"</p>
+  <p *ngSwitchCase="'seis'"> Você selecionou "Junho"</p>
+  <p *ngSwitchCase="'sete'"> Você selecionou "Julho"</p>
+  </div>
